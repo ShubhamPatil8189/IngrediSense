@@ -1,0 +1,91 @@
+.result-container {
+  min-height: 100vh;
+  background-color: #060d0a; /* Dark forest black */
+  color: #ffffff;
+  padding: 40px 24px 120px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Nav */
+.result-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  max-width: 1100px; margin: 0 auto 60px;
+}
+.nav-left { display: flex; align-items: center; gap: 12px; }
+.nav-logo-box { background: rgba(24, 220, 106, 0.2); padding: 5px; border-radius: 8px; }
+.nav-logo-inner { width: 18px; height: 18px; background: #18dc6a; border-radius: 4px; }
+.nav-brand { font-weight: 700; font-size: 1.1rem; color: #fff; }
+.nav-right { display: flex; align-items: center; gap: 20px; }
+.nav-link { color: #888; font-size: 14px; cursor: pointer; }
+.user-avatar { width: 32px; height: 32px; background: #fde68a; border-radius: 50%; }
+
+/* Header */
+.result-header { text-align: center; max-width: 800px; margin: 0 auto 48px; }
+.verified-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(24, 220, 106, 0.1); border: 1px solid rgba(24, 220, 106, 0.2);
+  padding: 6px 14px; border-radius: 100px; color: #18dc6a;
+  font-size: 11px; font-weight: 800; margin-bottom: 24px;
+}
+.result-title { font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+.result-subtitle { color: #6b8c7b; font-size: 1.2rem; line-height: 1.5; }
+
+/* Grid */
+.result-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px; max-width: 1000px; margin: 0 auto;
+}
+
+.info-card {
+  background: #111c17; border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 24px; padding: 28px;
+}
+
+.card-label {
+  display: flex; align-items: center; gap: 8px; color: #5a7a69;
+  font-size: 11px; font-weight: 700; text-transform: uppercase; margin-bottom: 24px;
+}
+
+/* Ingredients */
+.ingredient-item {
+  display: flex; align-items: center; gap: 16px;
+  background: #0c1411; padding: 14px 18px; border-radius: 16px; margin-bottom: 12px;
+}
+.item-icon.yellow { color: #facc15; }
+.item-icon.pink { color: #f472b6; }
+.item-name { font-weight: 700; font-size: 16px; margin: 0; }
+.item-desc { font-size: 12px; color: #5a7a69; }
+
+.card-body-text { color: #a4b8ad; line-height: 1.6; font-size: 15px; margin-bottom: 12px; }
+.card-body-text.secondary { font-size: 14px; color: #5a7a69; }
+.card-body-text.small { font-size: 13px; color: #5a7a69; }
+
+.text-action-btn {
+  background: none; border: none; color: #18dc6a; font-weight: 700;
+  display: flex; align-items: center; gap: 4px; cursor: pointer; padding: 0; margin-top: 20px;
+}
+
+/* Tags */
+.tag-container { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag {
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 16px; border-radius: 100px; font-size: 13px; color: #88a695;
+}
+
+/* Bottom Bar */
+.floating-action-bar {
+  position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
+  background: rgba(10, 20, 15, 0.6); backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1); padding: 8px;
+  border-radius: 100px; display: flex; align-items: center; gap: 12px; z-index: 100;
+}
+.scan-main-btn {
+  background: #18dc6a; color: #000; border: none;
+  padding: 14px 28px; border-radius: 100px; font-weight: 700;
+  display: flex; align-items: center; gap: 10px; cursor: pointer;
+}
+.utility-btn {
+  background: rgba(255, 255, 255, 0.08); border: none; color: white;
+  width: 48px; height: 48px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; cursor: pointer;
+}

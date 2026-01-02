@@ -1,0 +1,123 @@
+/* Deep black background for the whole page */
+.page-container {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Background glow effect */
+.ambient-glow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 500px;
+  background: radial-gradient(circle at top, rgba(30, 215, 96, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Header Styling */
+.header { text-align: center; margin-bottom: 48px; z-index: 10; }
+.logo-section { display: flex; align-items: center; justify-content: center; gap: 12px; margin-bottom: 8px; }
+.logo-icon { background: rgba(30, 215, 96, 0.1); padding: 8px; border-radius: 12px; }
+.leaf-icon { color: #1ed760; width: 28px; height: 28px; }
+.logo-text { color: white; font-size: 2.2rem; font-weight: 700; margin: 0; letter-spacing: -0.5px; }
+.tagline { color: #888; font-size: 1.1rem; }
+.tagline span { color: #fff; font-weight: 500; }
+
+/* The Black Card */
+.main-card {
+  width: 100%;
+  max-width: 480px;
+  background: #121212; /* Exact dark gray/black from image */
+  border: 1px solid #1f1f1f;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.input-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.ingredient-textarea {
+  width: 100%;
+  height: 160px;
+  background: #0a0a0a;
+  border: 1px solid #1f1f1f;
+  border-radius: 16px;
+  padding: 20px;
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.5;
+  outline: none;
+  resize: none;
+  transition: border 0.3s;
+}
+
+.ingredient-textarea:focus { border-color: #333; }
+
+/* Divider */
+.divider { display: flex; align-items: center; margin: 24px 0; }
+.divider-line { flex: 1; height: 1px; background: #1f1f1f; }
+.divider-text { padding: 0 16px; font-size: 11px; font-weight: 800; color: #333; }
+
+/* Buttons */
+.button-group { display: flex; flex-direction: column; gap: 12px; }
+
+.btn-secondary {
+  background: #1c1c1c;
+  color: white;
+  border: 1px solid #2a2a2a;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary {
+  background: #1ed760; /* Spotify Green */
+  color: #000;
+  border: none;
+  padding: 16px;
+  border-radius: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(30, 215, 96, 0.2);
+}
+
+.demo-link {
+  background: none;
+  border: none;
+  margin-top: 32px;
+  color: #555;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.demo-link:hover { color: #888; }
